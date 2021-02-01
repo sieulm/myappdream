@@ -1,0 +1,99 @@
+<div class="container" ng-app="">
+    <div class="row">
+        <div class="col-md-6 left">
+            <p class="title">New task</p>
+            <form action="" >
+                <div class="form-group">
+                    <label></label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Add new task...">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label>Due Date</label>
+                      <input type="date" class="form-control">
+                    </div>
+                    <div class="col-md-6 form-group">
+                    <label class="mr-sm-2" for="inlineFormCustomSelect">Piority</label>
+                    <select class="custom-select" id="inlineFormCustomSelect">
+                      <option value="low">low</option>
+                      <option value="normal">normal</option>
+                      <option value="high">high</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success">Add</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-6 right">
+            <p class="title">To Do List</p>
+            <div class="form-group">
+                <label></label>
+                <input type="text" class="form-control" id="" placeholder="Search...">
+            </div>
+            <div class="box-show">
+                <form action="" class="show">
+                    <div class="row info-working">
+                        <div class="col-md-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Do homework</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 btn-action">
+                            <div class="form-group action">
+<!--                                <button type="" class="btn btn-info" ng-model="myVar">Detail</button>-->
+                                <input type="checkbox" class="btn btn-info" ng-model="myVar">
+                                <button type="checkbox" class="btn btn-danger">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown-show" ng-show="myVar">
+                        <div class="form-group">
+                            <label></label>
+<!--                            <input type="text" class="form-control" id="" placeholder="...">-->
+                            <input type="text" class="form-control" id="" placeholder="...">
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label>Due Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <label class="mr-sm-2" for="inlineFormCustomSelect">Piority</label>
+                                <select class="custom-select" id="inlineFormCustomSelect">
+                                    <option value="low">low</option>
+                                    <option value="normal">normal</option>
+                                    <option value="high">high</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-success">Update</button>
+                      </div>
+                    </div>
+              </form>
+            </div>
+            <div class="build-action row">
+                <div class="col-md-6">
+                    <p class="title-build">Build Action:</p>
+                </div>
+                <div class="col-md-6 active">
+                    <div class="form-group action-build">
+                        <button type="" class="btn btn-primary">Done</button>
+                        <button type="" class="btn btn-danger">Remove</button>
+                    </div>
+                </div>
+          </div>
+        </div>
+    </div>
+</div>
